@@ -22,7 +22,7 @@ body{
 
 .navbar ul{
   margin:8px 0 0 0;
-  list-style:none;
+  list-style:none;  /*  Making this styled does some weird things to the anchors while they are floated .... try it*/
 }
 
 .navbar a:hover{
