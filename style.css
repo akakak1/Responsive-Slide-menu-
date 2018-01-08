@@ -12,6 +12,7 @@ How to center the navigation items ?
   background-color:#3b5998;
   overflow:hidden;
   height:63px;
+  
 }
 
 .navbar a{
@@ -19,7 +20,8 @@ How to center the navigation items ?
   display:block;
   color:#f2f2f2;
   text-align:center;
-  padding:14px 16px;
+  /* padding:14px 16px; */       /* So that width property is applied properly only */
+  width:25%;         /* To spread the nav anchors across the entire width  NOTE: there are 4 nav anchors    */
   text-decoration:none;
   font-size:17px;
 }
@@ -27,7 +29,10 @@ How to center the navigation items ?
 .navbar ul{
   margin:8px 0 0 0;
   list-style:none;  /*  Making this styled does some weird things to the anchors while they are floated .... try it*/
+  /* width:100%; */
+  padding:0px 0px;
 }
+
 
 .navbar a:hover{
   background-color:#ddd;
@@ -87,5 +92,5 @@ Also: if position is fixed then width is equal to specified value ... if positio
 }
 
 @media(min-width:568px){
-  /*.open-slide{display:none}*/
+  .open-slide{display:none}
 }
