@@ -20,7 +20,7 @@ How to center the navigation items ?
   display:block;
   color:#f2f2f2;
   text-align:center;
-  /* padding:14px 16px; */       /* So that width property is applied properly only */
+  padding:14px 0px;        /* So that width property is applied properly only  NOTE:Padding top-down is required */ /* NOTE:Hamberger is also in an Anchors so ...*/
   width:25%;                    /* To spread the nav anchors across the entire width  NOTE: there are 4 nav anchors    */
   text-decoration:none;
   font-size:17px;
