@@ -4,6 +4,10 @@ body{
   overflow-x:hidden;
 }
 
+
+/*
+How to center the navigation items ?
+*/
 .navbar{
   background-color:#3b5998;
   overflow:hidden;
@@ -30,6 +34,12 @@ body{
   color:#000;
 }
 
+
+/*
+for side-nav:
+If position is fixed then why is it visible even if we dont specify its position (means shouldnt it be hidden without specifying the position if pos is fixed)
+Also: if position is fixed then width is equal to specified value ... if position is not fixed then it spans across the whole width ?? why 
+*/
 .side-nav{
   height:100%;
   width:0;
@@ -58,7 +68,7 @@ body{
 }
 
 .side-nav .btn-close{
-  position:absolute;
+  position:absolute;     /* postion of container should be relative or fixed for the absolute child to be within it */
   top:0;
   right:22px;
   font-size:36px;
